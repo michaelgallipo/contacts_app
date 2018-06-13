@@ -25,7 +25,8 @@ class Api::ContactsController < ApplicationController
     city: params[:city],
     email: params[:email],
     cell_phone: params[:cell_phone],
-    bio: params[:bio])
+    bio: params[:bio],
+    user_id: current_user.id)
   render "show.json.jbuilder"
   end
 
