@@ -12,3 +12,5 @@ json.formatted do
   json.full_name contact.full_name
   json.japan_phone contact.japan_phone
 end
+
+json.groups contact.groups
